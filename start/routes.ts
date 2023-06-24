@@ -24,6 +24,8 @@ Route.group(() => {
  // auth
 Route.post('auth/register', 'AuthController.register')
 Route.post('auth/login', 'AuthController.login')
+Route.post('image/upload', 'FileUploadsController.store')
+Route.get('upload', 'FileUploadsController.getUploads')
 
 // threads
 // Route.post('threads', 'ThreadsController.store').middleware('auth')
